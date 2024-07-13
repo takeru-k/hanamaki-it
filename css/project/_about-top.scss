@@ -1,0 +1,11 @@
+@use "../setting/setting";
+
+.p-about-top {
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .p-about-top {
+    padding: 64px 0;
+  }
+}

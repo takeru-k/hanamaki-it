@@ -1,0 +1,48 @@
+@use "../setting/setting";
+
+.c-button {
+  position: relative;
+
+  @media (min-width: 768px) {
+    width: 200px;
+  }
+}
+
+.c-button-link {
+  color: setting.$color-main;
+  text-align: center;
+  background: #fff;
+  border: 1px solid setting.$color-main;
+  padding: 12px 16px;
+  letter-spacing: 0.1sem;
+  margin: 24px auto 0;
+  display: block;
+  transition: 0.4s;
+  position: relative;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    margin-left: 0;
+  }
+
+  &:hover {
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+  }
+}
+
+.c-button-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.c-button-link-white {
+  color: #333;
+  border: 1px solid #333;
+
+  &:hover {
+    color: #333;
+    background: #ddd;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,56 @@
+@use "../setting/setting";
+
+.c-functions {
+  padding: 60px 0 40px;
+  background: #252522;
+}
+
+.c-functions__item {
+  margin-bottom: 40px;
+
+  img {
+    margin: 0 auto;
+    width: 120px;
+  }
+
+  h3 {
+    font-size: clamp(1.125rem, 1.08rem + 0.23vw, 1.25rem);
+    text-align: center;
+    margin-top: 16px;
+    color: #fff;
+  }
+
+  p {
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: #fafafa;
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-functions__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .c-functions__item {
+    position: relative;
+    width: 44%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-functions {
+    padding: 120px 0;
+  }
+
+  .c-functions__item {
+    width: 30%;
+  }
+
+  .c-functions__content {
+    margin-top: 34px;
+  }
+}

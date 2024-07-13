@@ -1,0 +1,39 @@
+@use "../setting/setting";
+
+.c-heading-top-en {
+  display: block;
+  text-align: center;
+  font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+  color: setting.$color-main;
+  text-transform: capitalize;
+  position: relative;
+  padding-top: 32px;
+
+  @media (min-width: 768px) {
+    padding-top: 48px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    background-color: setting.$color-main;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: 768px) {
+      height: 40px;
+    }
+  }
+}
+
+.c-heading-top-h2 {
+  text-align: center;
+  font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+}
+
+.c-heading-top-white {
+  color: #fff;
+}

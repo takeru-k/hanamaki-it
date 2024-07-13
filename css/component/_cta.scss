@@ -1,0 +1,26 @@
+@use "../setting/setting";
+
+.c-cta {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 88px;
+}
+
+.c-cta__heading {
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  font-weight: normal;
+  font-size: clamp(1.5rem, 0.75rem + 1.88vw, 2.25rem);
+}
+
+.c-cta__text {
+  margin-top: clamp(0.75rem, 0.25rem + 1.25vw, 1.25rem);
+}
+
+@media (min-width: 1024px) {
+  .c-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 64px;
+  }
+}
