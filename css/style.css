@@ -1293,6 +1293,7 @@ div.wpcf7 .wpcf7-spinner {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+  aspect-ratio: 3/2;
 }
 
 .p-contact__body {
