@@ -1292,7 +1292,6 @@ div.wpcf7 .wpcf7-spinner {
 .p-top-service-item-media img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
   aspect-ratio: 3/2;
 }
 
